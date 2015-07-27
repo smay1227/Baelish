@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="94dp"
+	android:background="@color/backover">
+    
+   <LinearLayout  
+        android:id="@+id/main_dialog_layout"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:orientation="vertical"
+        android:background="@color/textunused">  
+           
+        <LinearLayout 
+            android:id="@+id/ll_all"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:paddingLeft="5dp"  
+            android:paddingRight="5dp"  
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"	
+            android:onClick="true">
+            
+            <ImageView  
+                android:id="@+id/iv_all"  
+                android:layout_width="18sp"  
+                android:layout_height="18sp"  
+                android:layout_gravity="center_vertical"  
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/content_desc"
+                android:src="@drawable/unalltaste"/>  
+ 
+            <TextView  
+                android:id="@+id/tv_all"
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:padding="8dp"  
+                android:text="@string/all"  
+                android:textColor="@color/bottom_backcolor"
+                android:textAppearance="?android:attr/textAppearanceMedium" /> 
+            
+        </LinearLayout>
+        
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_desc"
+            android:src="@drawable/shopline"
+            android:layout_gravity="center_horizontal"/>
+        
+        <LinearLayout 
+            android:id="@+id/ll_fastfood"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:paddingLeft="5dp"  
+            android:paddingRight="5dp"  
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:onClick="true">
+            
+            <ImageView  
+                android:id="@+id/iv_fastfood"  
+                android:layout_width="18sp"  
+                android:layout_height="18sp"  
+                android:layout_gravity="center_vertical"  
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/content_desc"
+                android:src="@drawable/unfastfood"/>  
+ 
+            <TextView 
+                android:id="@+id/tv_fastfood"
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:padding="8dp"  
+                android:text="@string/fastfood"  
+                android:textColor="@color/bottom_backcolor"
+                android:textAppearance="?android:attr/textAppearanceMedium" /> 
+            
+        </LinearLayout>
+        
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_desc"
+            android:src="@drawable/shopline"
+            android:layout_gravity="center_horizontal"/>
+        
+        <LinearLayout 
+            android:id="@+id/ll_chinafood"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:paddingLeft="5dp"  
+            android:paddingRight="5dp"  
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:onClick="true">
+            
+            <ImageView  
+                android:id="@+id/iv_chinafood"  
+                android:layout_width="18sp"  
+                android:layout_height="18sp"  
+                android:layout_gravity="center_vertical"  
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/content_desc"
+                android:src="@drawable/unchinafood"/>  
+ 
+            <TextView 
+                android:id="@+id/tv_chinafood"
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:padding="8dp"  
+                android:text="@string/chinafood"  
+                android:textColor="@color/bottom_backcolor"
+                android:textAppearance="?android:attr/textAppearanceMedium" /> 
+            
+        </LinearLayout>
+        
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_desc"
+            android:src="@drawable/shopline"
+            android:layout_gravity="center_horizontal"/>
+        
+        <LinearLayout 
+            android:id="@+id/ll_westfood"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:paddingLeft="5dp"  
+            android:paddingRight="5dp"  
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:onClick="true">
+            
+            <ImageView  
+                android:id="@+id/iv_westfood"  
+                android:layout_width="18sp"  
+                android:layout_height="18sp"  
+                android:layout_gravity="center_vertical"  
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/content_desc"
+                android:src="@drawable/unwestfood"/>  
+ 
+            <TextView 
+                android:id="@+id/tv_westfood"
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:padding="8dp"  
+                android:text="@string/westfood"  
+                android:textColor="@color/bottom_backcolor"
+                android:textAppearance="?android:attr/textAppearanceMedium" /> 
+            
+        </LinearLayout>
+        
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_desc"
+            android:src="@drawable/shopline"
+            android:layout_gravity="center_horizontal"/>
+        
+        <LinearLayout 
+            android:id="@+id/ll_tokyofood"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:paddingLeft="5dp"  
+            android:paddingRight="5dp"  
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:onClick="true">
+            
+            <ImageView  
+                android:id="@+id/iv_tokyofood"  
+                android:layout_width="18sp"  
+                android:layout_height="18sp"  
+                android:layout_gravity="center_vertical"  
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/content_desc"
+                android:src="@drawable/untokyofood"/>  
+ 
+            <TextView 
+                android:id="@+id/tv_tokyofood"
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:padding="8dp"  
+                android:text="@string/tokyofood"  
+                android:textColor="@color/bottom_backcolor"
+                android:textAppearance="?android:attr/textAppearanceMedium" /> 
+            
+        </LinearLayout>
+        
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_desc"
+            android:src="@drawable/shopline"
+            android:layout_gravity="center_horizontal"/>
+        
+        <LinearLayout 
+            android:id="@+id/ll_foreignfood"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:paddingLeft="5dp"  
+            android:paddingRight="5dp"  
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:onClick="true">
+            
+            <ImageView  
+                android:id="@+id/iv_foreignfood"  
+                android:layout_width="18sp"  
+                android:layout_height="18sp"  
+                android:layout_gravity="center_vertical"  
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/content_desc"
+                android:src="@drawable/unforeignfood"/>  
+ 
+            <TextView 
+                android:id="@+id/tv_foreignfood"
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:padding="8dp"  
+                android:text="@string/foreignfood"  
+                android:textColor="@color/bottom_backcolor"
+                android:textAppearance="?android:attr/textAppearanceMedium" /> 
+            
+        </LinearLayout>
+        
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_desc"
+            android:src="@drawable/shopline"
+            android:layout_gravity="center_horizontal"/>
+        
+        <LinearLayout 
+            android:id="@+id/ll_drink"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:paddingLeft="5dp"  
+            android:paddingRight="5dp"  
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:onClick="true">
+            
+            <ImageView  
+                android:id="@+id/iv_drink"  
+                android:layout_width="18sp"  
+                android:layout_height="18sp"  
+                android:layout_gravity="center_vertical"  
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/content_desc"
+                android:src="@drawable/undrink"/>  
+ 
+            <TextView 
+                android:id="@+id/tv_drink"
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:padding="8dp"  
+                android:text="@string/drink"  
+                android:textColor="@color/bottom_backcolor"
+                android:textAppearance="?android:attr/textAppearanceMedium" /> 
+            
+        </LinearLayout>
+        
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_desc"
+            android:src="@drawable/shopline"
+            android:layout_gravity="center_horizontal"/>
+        
+        <LinearLayout 
+            android:id="@+id/ll_snackfood"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:paddingLeft="5dp"  
+            android:paddingRight="5dp"  
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:onClick="true">
+            
+            <ImageView  
+                android:id="@+id/iv_snackfood"  
+                android:layout_width="18sp"  
+                android:layout_height="18sp"  
+                android:layout_gravity="center_vertical"  
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/content_desc"
+                android:src="@drawable/unsnackfood"/>  
+ 
+            <TextView 
+                android:id="@+id/tv_snackfood"
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:padding="8dp"  
+                android:text="@string/snackfood"  
+                android:textColor="@color/bottom_backcolor"
+                android:textAppearance="?android:attr/textAppearanceMedium" /> 
+            
+        </LinearLayout>
+        
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_desc"
+            android:src="@drawable/shopline"
+            android:layout_gravity="center_horizontal"/>
+        
+        <LinearLayout 
+            android:id="@+id/ll_cake"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:paddingLeft="5dp"  
+            android:paddingRight="5dp"  
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:onClick="true">
+            
+            <ImageView  
+                android:id="@+id/iv_cake"  
+                android:layout_width="18sp"  
+                android:layout_height="18sp"  
+                android:layout_gravity="center_vertical"  
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/content_desc"
+                android:src="@drawable/uncake"/>  
+ 
+            <TextView 
+                android:id="@+id/tv_cake"
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:padding="8dp"  
+                android:text="@string/cake"  
+                android:textColor="@color/bottom_backcolor"
+                android:textAppearance="?android:attr/textAppearanceMedium" /> 
+            
+        </LinearLayout>
+        
+         <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_desc"
+            android:src="@drawable/shopline"
+            android:layout_gravity="center_horizontal"/>
+        
+        <LinearLayout 
+            android:id="@+id/ll_donut"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:paddingLeft="5dp"  
+            android:paddingRight="5dp"  
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:onClick="true">
+            
+            <ImageView  
+                android:id="@+id/iv_donut"  
+                android:layout_width="18sp"  
+                android:layout_height="18sp"  
+                android:layout_gravity="center_vertical"  
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/content_desc"
+                android:src="@drawable/undonut"/>  
+ 
+         	<TextView 
+                android:id="@+id/tv_donut"
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:padding="8dp"  
+                android:text="@string/donut"  
+                android:textColor="@color/bottom_backcolor"
+                android:textAppearance="?android:attr/textAppearanceMedium" /> 
+            
+        </LinearLayout>
+        
+    </LinearLayout>    
+    
+
+</ScrollView>

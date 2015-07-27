@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backlinear">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/textused">
+        
+        <ImageView 
+            android:id="@+id/iv_rleft"
+            android:layout_width="14sp"
+            android:layout_height="14sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/rleft"
+            android:onClick="true"
+            android:contentDescription="@string/content_desc"/>
+        <!-- 
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_rleft"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:text="@string/back"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/used"/> -->
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:text="@string/addaddress"/>
+        
+        
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        android:orientation="horizontal"
+        android:background="@color/textunused">
+        
+        <TextView 
+            android:id="@+id/tv_contacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="@string/contacter"/>
+        
+        <EditText 
+            android:id="@+id/et_contacter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:hint="@string/etcontacter"
+            android:background="@null"
+            android:layout_toRightOf="@+id/tv_contacter"
+            android:layout_marginLeft="40dp"/>
+        
+        <ImageView  
+           android:id="@+id/in_line"
+           android:layout_width="wrap_content"  
+           android:layout_height="wrap_content"
+           android:contentDescription="@string/content_desc"
+           android:src="@drawable/shopline"
+           android:layout_below="@+id/tv_contacter"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="20dp"
+           android:layout_marginBottom="20dp"/>
+        
+        <TextView 
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/in_line"
+            android:text="@string/contactphone"/>
+        
+        <EditText 
+            android:id="@+id/et_contactephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:hint="@string/etcontactphone"
+            android:background="@null"
+            android:layout_toRightOf="@+id/tv_phone"
+            android:layout_below="@+id/in_line"
+            android:layout_alignLeft="@+id/et_contacter"/>
+        
+        <ImageView  
+           android:id="@+id/phone_line"
+           android:layout_width="wrap_content"  
+           android:layout_height="wrap_content"
+           android:contentDescription="@string/content_desc"
+           android:src="@drawable/shopline"
+           android:layout_below="@+id/tv_phone"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="20dp"
+           android:layout_marginBottom="20dp"/>
+        
+        <TextView 
+            android:id="@+id/tv_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/phone_line"
+            android:text="@string/contactaddr"/>
+        
+        <TextView 
+            android:id="@+id/et_contactaddr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/tv_phone"
+            android:layout_below="@+id/phone_line"
+            android:layout_alignLeft="@+id/et_contacter"/>
+        
+        <ImageView  
+           android:id="@+id/short_line"
+           android:layout_width="wrap_content"  
+           android:layout_height="wrap_content"
+           android:contentDescription="@string/content_desc"
+           android:src="@drawable/shopline"
+           android:layout_below="@+id/et_contactaddr"
+           android:layout_marginTop="20dp"
+           android:layout_marginBottom="20dp"
+           android:layout_alignLeft="@+id/et_contacter"/>
+        
+        <EditText 
+            android:id="@+id/et_contactaddrinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:hint="@string/etcontactaddrinfo"
+            android:background="@null"
+            android:layout_toRightOf="@+id/tv_phone"
+            android:layout_below="@+id/short_line"
+            android:layout_alignLeft="@+id/et_contacter"/>
+        
+    </RelativeLayout>
+    
+    <Button 
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textunused"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btnbackground"
+        android:text="@string/save"/>
+    
+</LinearLayout>

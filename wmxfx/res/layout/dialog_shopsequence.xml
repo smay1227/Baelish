@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="94dp"
+	android:background="@color/backover">
+	
+	<LinearLayout  
+        android:id="@+id/sequence_dialog_layout"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:orientation="vertical"
+        android:background="@color/textunused">
+        
+	    <LinearLayout 
+            android:id="@+id/ll_allsequence"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:paddingLeft="5dp"  
+            android:paddingRight="5dp"  
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"	
+            android:onClick="true">
+            
+            <ImageView  
+                android:id="@+id/iv_allsequence"  
+                android:layout_width="18sp"  
+                android:layout_height="18sp"  
+                android:layout_gravity="center_vertical"  
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/content_desc"
+                android:src="@drawable/unallsequence"/>  
+ 
+            <TextView  
+                android:id="@+id/tv_allsequence"
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:padding="8dp"  
+                android:text="@string/allsequence"  
+                android:textColor="@color/bottom_backcolor"
+                android:textAppearance="?android:attr/textAppearanceMedium" /> 
+            
+        </LinearLayout>
+        
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_desc"
+            android:src="@drawable/shopline"
+            android:layout_gravity="center_horizontal"/>
+        
+        <LinearLayout 
+            android:id="@+id/ll_lowdelivercost"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:paddingLeft="5dp"  
+            android:paddingRight="5dp"  
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"	
+            android:onClick="true">
+            
+            <ImageView  
+                android:id="@+id/iv_lowdelivercost"  
+                android:layout_width="18sp"  
+                android:layout_height="18sp"  
+                android:layout_gravity="center_vertical"  
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/content_desc"
+                android:src="@drawable/unlowdelivercost"/>  
+ 
+            <TextView  
+                android:id="@+id/tv_lowdelivercost"
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:padding="8dp"  
+                android:text="@string/lowdelivercost"  
+                android:textColor="@color/bottom_backcolor"
+                android:textAppearance="?android:attr/textAppearanceMedium" /> 
+            
+        </LinearLayout>
+        
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_desc"
+            android:src="@drawable/shopline"
+            android:layout_gravity="center_horizontal"/>
+        
+        <LinearLayout 
+            android:id="@+id/ll_highgrade"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:paddingLeft="5dp"  
+            android:paddingRight="5dp"  
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"	
+            android:onClick="true">
+            
+            <ImageView  
+                android:id="@+id/iv_highgrade"  
+                android:layout_width="18sp"  
+                android:layout_height="18sp"  
+                android:layout_gravity="center_vertical"  
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/content_desc"
+                android:src="@drawable/unhighgrade"/>  
+ 
+            <TextView  
+                android:id="@+id/tv_highgrade"
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:padding="8dp"  
+                android:text="@string/highgrade"  
+                android:textColor="@color/bottom_backcolor"
+                android:textAppearance="?android:attr/textAppearanceMedium" /> 
+            
+        </LinearLayout>
+        
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_desc"
+            android:src="@drawable/shopline"
+            android:layout_gravity="center_horizontal"/>
+        
+        <LinearLayout 
+            android:id="@+id/ll_highsale"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:paddingLeft="5dp"  
+            android:paddingRight="5dp"  
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"	
+            android:onClick="true">
+            
+            <ImageView  
+                android:id="@+id/iv_highsale"  
+                android:layout_width="18sp"  
+                android:layout_height="18sp"  
+                android:layout_gravity="center_vertical"  
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/content_desc"
+                android:src="@drawable/unhighsale"/>  
+ 
+            <TextView  
+                android:id="@+id/tv_highsale"
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:padding="8dp"  
+                android:text="@string/highsale"  
+                android:textColor="@color/bottom_backcolor"
+                android:textAppearance="?android:attr/textAppearanceMedium" /> 
+            
+        </LinearLayout>
+    
+    </LinearLayout>
+</ScrollView>

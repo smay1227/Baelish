@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/textused">
+        
+        <ImageView 
+            android:id="@+id/iv_rleft"
+            android:layout_width="14sp"
+            android:layout_height="14sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/rleft"
+            android:onClick="true"
+            android:contentDescription="@string/content_desc"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:text="@string/codelogin"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/textunused"
+        android:padding="20dp">
+        
+        <ImageView 
+            android:id="@+id/iv_phone"
+            android:layout_width="14sp"
+            android:layout_height="23sp"
+            android:contentDescription="@string/content_desc"
+            android:src="@drawable/phone"/>
+        
+        <EditText 
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_phone"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="8dp"
+            android:inputType="phone"
+            android:hint="@string/phone"
+            android:background="@null"
+            android:textColor="@color/black"/>
+        
+        <Button 
+            android:id="@+id/btn_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/getcode"
+            android:background="@drawable/btnbackground"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/textunused"/>
+        
+        <ImageView  
+           android:id="@+id/in_line"
+           android:layout_width="wrap_content"  
+           android:layout_height="wrap_content"
+           android:contentDescription="@string/content_desc"
+           android:src="@drawable/shopline"
+           android:layout_below="@+id/tv_phone"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"/>
+        
+        <ImageView 
+            android:id="@+id/iv_email"
+            android:layout_width="23sp"
+            android:layout_height="12sp"
+            android:contentDescription="@string/content_desc"
+            android:layout_below="@+id/in_line"
+            android:layout_alignBottom="@+id/tv_mail"
+            android:src="@drawable/mail"/>
+        
+        <EditText 
+            android:id="@+id/tv_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_email"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:hint="@string/code"
+            android:layout_below="@+id/in_line"
+            android:background="@null"
+            android:textColor="@color/black"/>
+        
+    </RelativeLayout>
+    
+    <Button 
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textunused"
+        android:textSize="20sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btnbackground"
+        android:text="@string/login"/>
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+        
+        <TextView 
+            android:id="@+id/notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/light"
+            android:text="@string/nomsg"/>
+        
+        <TextView 
+            android:id="@+id/hotline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/used"
+            android:layout_toRightOf="@+id/notice"
+            android:text="@string/hotline"/>
+        
+    </RelativeLayout>
+</LinearLayout>

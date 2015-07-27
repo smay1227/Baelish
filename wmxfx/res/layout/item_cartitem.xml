@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="10dp">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        
+        <TextView 
+            android:id="@+id/tv_dishname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:text="培根酥脆双层牛堡套餐"/>
+        
+        <LinearLayout 
+           android:id="@+id/ll_dishdelete"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_alignParentRight="true"
+           android:onClick="true"
+           android:background="@drawable/backchooseselect">
+           
+           <ImageView 
+              android:layout_width="16sp"
+              android:layout_height="16sp"
+              android:layout_gravity="center_vertical"
+              android:contentDescription="@string/content_desc"
+              android:src="@drawable/delete"/>
+           
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="17sp"
+               android:textColor="@color/textunused"
+               android:text="@string/delete"/>
+           
+       </LinearLayout>
+       
+        <ImageView  
+           android:layout_width="wrap_content"  
+           android:layout_height="wrap_content"
+           android:contentDescription="@string/content_desc"
+           android:src="@drawable/shopline"
+           android:layout_below="@+id/tv_dishname"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="10dp"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        
+        <TextView 
+            android:id="@+id/tv_dishatrrName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/light"
+            android:layout_alignParentLeft="true"/>
+        
+        <TextView 
+            android:id="@+id/tv_dishatrrPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/light"
+            android:layout_alignParentRight="true"/>
+        
+        <ImageView  
+           android:layout_width="wrap_content"  
+           android:layout_height="wrap_content"
+           android:contentDescription="@string/content_desc"
+           android:src="@drawable/shopline"
+           android:layout_below="@+id/tv_dishatrrName"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="10dp"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+           android:id="@+id/rl_dishnum"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="10dp">
+           
+           <TextView 
+              android:id="@+id/tv_dishnumtxt"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="18sp"
+              android:textColor="@color/light"
+              android:layout_alignParentLeft="true"
+              android:text="@string/num"/>
+           
+           <ImageView 
+		      android:id="@+id/iv_dishadd"
+		      android:contentDescription="@string/content_desc"
+		      android:layout_width="20sp"
+		      android:layout_height="20sp"
+		      android:layout_alignParentRight="true"
+		      android:layout_marginRight="30dp"
+		      android:layout_alignBottom="@+id/tv_dishnumtxt"
+		      android:src="@drawable/add"
+		      android:onClick="true"/>
+  
+		  <TextView 
+		      android:id="@+id/tv_dishnum"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:layout_toLeftOf="@+id/iv_dishadd"
+		      android:layout_alignBottom="@+id/tv_dishnumtxt"
+		      android:textSize="18sp"
+		      android:layout_marginLeft="20dp"
+		      android:layout_marginRight="20dp"/>
+  
+		  <ImageView 
+		      android:id="@+id/iv_dishdiv"
+		      android:contentDescription="@string/content_desc"
+		      android:layout_width="20sp"
+		      android:layout_height="20sp"
+		      android:layout_toLeftOf="@+id/tv_dishnum"
+		      android:layout_alignBottom="@+id/tv_dishnumtxt"
+		      android:src="@drawable/div"/>
+		  
+		  <ImageView  
+	           android:layout_width="wrap_content"  
+	           android:layout_height="wrap_content"
+	           android:contentDescription="@string/content_desc"
+	           android:src="@drawable/shopline"
+	           android:layout_below="@+id/tv_dishnumtxt"
+	           android:layout_centerHorizontal="true"
+	           android:layout_marginTop="10dp"/>
+  
+       </RelativeLayout>
+       
+       <RelativeLayout 
+          android:id="@+id/rl_dishpricetotal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="10dp">
+			    
+              <TextView 
+                 android:id="@+id/tv_dishpricetotaltxt"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="16sp"
+                 android:textColor="@color/orange"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignBottom="@+id/tv_pricenum"/>
+                
+                <TextView 
+                    android:id="@+id/tv_pricenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="@color/orange"
+                    android:layout_toLeftOf="@+id/tv_yuan"
+                    android:layout_marginRight="2dp"/>
+                
+                <TextView 
+                    android:id="@+id/tv_yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/orange"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBottom="@+id/tv_pricenum"
+                    android:layout_alignBaseline="@+id/tv_pricenum"
+                    android:text="@string/yuan"/>
+			    
+            </RelativeLayout>
+
+</LinearLayout>

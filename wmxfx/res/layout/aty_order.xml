@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/textunused">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/textused">
+        
+        <ImageView 
+            android:id="@+id/iv_rleft"
+            android:layout_width="14sp"
+            android:layout_height="14sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/rleft"
+            android:onClick="true"
+            android:contentDescription="@string/content_desc"/>
+        <!-- 
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_rleft"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:text="@string/back"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/used"/> -->
+        
+        <TextView 
+            android:id="@+id/tv_shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:text="@string/orderconfirm"/>
+        
+        
+    </RelativeLayout>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/textunused">
+            
+            <RelativeLayout 
+                android:id="@+id/rl_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                
+                <ImageView 
+                    android:id="@+id/iv_location"
+                    android:layout_width="14sp"
+                    android:layout_height="14sp"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@string/content_desc"
+                    android:src="@drawable/locationgreen"
+                    android:layout_centerVertical="true"/>
+                
+                <TextView 
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/light"
+                    android:layout_toRightOf="@+id/iv_location"/>
+                
+                <TextView 
+                    android:id="@+id/tv_userphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/light"
+                    android:layout_toRightOf="@+id/tv_username"
+                    android:layout_alignBottom="@+id/tv_username"
+                    android:layout_marginLeft="5dp"/>
+                
+                <TextView 
+                    android:id="@+id/tv_useraddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/light"
+                    android:layout_below="@+id/tv_username"
+                    android:layout_toRightOf="@+id/iv_location"
+                    android:layout_marginRight="40dp"/>
+                
+                <ImageView 
+		            android:id="@+id/iv_right"
+		            android:layout_width="14sp"
+		            android:layout_height="14sp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:src="@drawable/rightlinear"
+		            android:contentDescription="@string/content_desc"/>
+                
+            </RelativeLayout>
+            
+            <ListView 
+                android:id="@+id/lv_shop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                
+            </ListView>
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/backlinear"/>
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:id="@+id/rl_onlinepay"
+                android:onClick="true">
+                
+                <TextView 
+                    android:id="@+id/tv_onlinepay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/payonline"/>
+                
+              <ImageView 
+                  android:id="@+id/iv_onlinepay"
+                  android:layout_width="16sp"
+                  android:layout_height="16sp"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:contentDescription="@string/content_desc"
+                  android:src="@drawable/choose"
+                  android:visibility="gone"/>
+                
+            </RelativeLayout>
+            
+            <ImageView  
+			    android:layout_width="wrap_content"  
+			    android:layout_height="wrap_content"
+			    android:contentDescription="@string/content_desc"
+			    android:src="@drawable/shopline"
+			    android:layout_gravity="center_horizontal"/>
+            
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:id="@+id/rl_onpay"
+                android:onClick="true">
+                
+                <TextView 
+                    android:id="@+id/tv_onpay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/payon"/>
+                
+              <ImageView 
+                  android:id="@+id/iv_onpay"
+                  android:layout_width="16sp"
+                  android:layout_height="16sp"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:contentDescription="@string/content_desc"
+                  android:src="@drawable/choose"
+                  android:visibility="gone"/>
+                
+            </RelativeLayout>
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/backlinear"/>
+            
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:id="@+id/rl_voucher"
+                android:visibility="gone">
+                
+                <TextView 
+                    android:id="@+id/tv_voucher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/voucher"/>
+                
+	            <TextView
+		            android:id="@+id/tv_vouchernum"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="16sp"
+		            android:textColor="@color/light"
+		            android:layout_toLeftOf="@+id/iv_voucher"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="2dp"/>
+		        
+		        <ImageView 
+		            android:id="@+id/iv_voucher"
+		            android:layout_width="14sp"
+		            android:layout_height="14sp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:src="@drawable/rightlinear"
+		            android:contentDescription="@string/content_desc"/>
+                
+            </RelativeLayout>
+            
+            <ImageView  
+			    android:layout_width="wrap_content"  
+			    android:layout_height="wrap_content"
+			    android:contentDescription="@string/content_desc"
+			    android:src="@drawable/shopline"
+			    android:layout_gravity="center_horizontal"/>
+            
+            <RelativeLayout 
+                android:id="@+id/rl_intergral"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+                
+                <TextView 
+                    android:id="@+id/tv_intergral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/intergral"/>
+                
+	            <TextView
+		            android:id="@+id/tv_intergralnum"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="16sp"
+		            android:textColor="@color/light"
+		            android:layout_toLeftOf="@+id/iv_intergral"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="2dp"/>
+		        
+		        <ImageView 
+		            android:id="@+id/iv_intergral"
+		            android:layout_width="14sp"
+		            android:layout_height="14sp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:src="@drawable/rightlinear"
+		            android:contentDescription="@string/content_desc"/>
+                
+            </RelativeLayout>
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/backlinear"/>
+            
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+		        
+                <TextView 
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/total"/>
+                
+                <TextView 
+                    android:id="@+id/tv_totalnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/used"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+                
+                
+                
+            </RelativeLayout>
+            
+            <Button 
+               android:id="@+id/btn_pay"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="18sp"
+               android:layout_margin="10dp"
+               android:layout_marginBottom="20dp"  
+               android:gravity="center"
+               android:textColor="@color/textunused"
+               android:background="@drawable/btnbackground"
+               android:text="@string/checkorder"/>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

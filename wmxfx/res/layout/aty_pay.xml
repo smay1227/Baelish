@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backlinear">
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/textused">
+        
+        <ImageView 
+            android:id="@+id/iv_rleft"
+            android:layout_width="14sp"
+            android:layout_height="14sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/rleft"
+            android:onClick="true"
+            android:contentDescription="@string/content_desc"/>
+        <!-- 
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_rleft"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:text="@string/back"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/used"/> -->
+        
+        <TextView 
+            android:id="@+id/tv_shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:text="@string/payway"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_epay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textunused"
+        android:layout_marginTop="40dp"
+        android:padding="20dp">
+        
+        <TextView 
+            android:id="@+id/tv_epay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:text="@string/epay"/>
+        
+        <ImageView 
+            android:id="@+id/iv_epay"
+            android:layout_width="18sp"
+            android:layout_height="18sp"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/content_desc"
+            android:src="@drawable/choose"
+            android:layout_centerVertical="true"
+            android:layout_alignBottom="@+id/tv_epay"
+            android:visibility="visible"/>
+        
+    </RelativeLayout>
+        
+    <ImageView  
+        android:id="@+id/iv_payline"
+	    android:layout_width="wrap_content"  
+	    android:layout_height="wrap_content"
+	    android:contentDescription="@string/content_desc"
+	    android:src="@drawable/shopline"
+	    android:layout_gravity="center"/>
+        
+    <RelativeLayout 
+        android:id="@+id/rl_wechatpay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textunused"
+        android:padding="20dp">
+        
+        <TextView 
+            android:id="@+id/tv_wechatpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:text="@string/wechatpay"/>
+        
+        <ImageView 
+            android:id="@+id/iv_wechatpay"
+            android:layout_width="18sp"
+            android:layout_height="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/content_desc"
+            android:src="@drawable/choose"
+            android:layout_alignBottom="@+id/iv_wechatpay"
+            android:visibility="gone"/>
+        
+    </RelativeLayout>
+    
+    <Button 
+       android:id="@+id/btn_confirmpay"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="18sp"
+       android:layout_marginTop="40dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp" 
+       android:gravity="center"
+       android:textColor="@color/textunused"
+       android:background="@drawable/btnbackground"
+       android:text="@string/confirmpay"/>
+    
+</LinearLayout>
