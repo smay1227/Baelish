@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 新店上线标题设置 -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp">
+        
+        <ImageView 
+            android:id="@+id/iv_newshop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/newshop"
+            android:contentDescription="@string/content_desc"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_newshop"
+            android:text="@string/newshoponline"
+            android:textColor="@color/light"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        
+        <TextView 
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_moredownnewshop"
+            android:text="@string/more"
+            android:textColor="@color/light"
+            android:onClick="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        
+        <ImageView 
+            android:id="@+id/iv_moredownnewshop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/moredown"
+            android:contentDescription="@string/content_desc"
+            />
+    </RelativeLayout>
+    
+    <include 
+        android:id="@+id/in_newshop"
+        layout="@layout/item_shoprecommand"/>
+    <ListView 
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+    </ListView>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

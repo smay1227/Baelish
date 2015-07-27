@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="@color/textused">
+        
+	        <com.darna.wmxfx.layout.RoundImageView 
+		        android:id="@+id/ri_shopImage"
+		        android:layout_width="80dp"
+		        android:layout_height="80dp"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_marginTop="40dp"
+		        android:layout_marginBottom="10dp"
+		        imagecontrol:border_inside_color="#fff7f2e9"
+	            imagecontrol:border_outside_color="#fff7f2e9"
+		        imagecontrol:border_thickness="2dp"/>
+	        
+	        <TextView 
+	            android:id="@+id/tv_shopName"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="18sp"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginBottom="10dp"/>
+	        
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+	            android:layout_gravity="center_horizontal">
+	            
+	            <RatingBar 
+		    	   android:id="@+id/rb_shopRate"
+				   android:layout_width="wrap_content"
+				   android:layout_height="21dp"
+				   android:layout_marginBottom="40dp"
+				   android:isIndicator="true"
+				   android:layout_gravity="center_horizontal"
+				   style="?android:attr/ratingBarStyleSmall"
+				   android:numStars="5"
+				   android:stepSize="0.1"
+				   android:progressDrawable="@drawable/rating_yellow"/>
+	            
+	            <TextView 
+	                android:id="@+id/tv_shopRate"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp"
+	                android:textSize="18sp"
+	                android:textColor="@color/ratetxt"/>
+	            
+	        </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:background="@color/infonum">
+            
+            <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                
+                <TextView 
+                    android:id="@+id/tv_distancenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:textColor="@color/textunused"/>
+                
+                <TextView 
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:textColor="@color/textunused"
+                    android:text="公里"/>
+                
+            </LinearLayout>
+            
+             <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                
+                <TextView 
+                    android:id="@+id/tv_deliverycostnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:textColor="@color/textunused"/>
+                
+                <TextView 
+                    android:id="@+id/tv_deliverycost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:textColor="@color/textunused"
+                    android:text="配送费"/>
+                
+            </LinearLayout>
+            
+              <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                
+                <TextView 
+                    android:id="@+id/tv_averagenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:textColor="@color/textunused"/>
+                
+                <TextView 
+                    android:id="@+id/tv_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:textColor="@color/textunused"
+                    android:text="人均"/>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp">
+            <ImageView 
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:contentDescription="@string/content_desc"
+                android:src="@drawable/shoptime"
+                android:layout_gravity="center_vertical"/>
+            
+            <TextView 
+                android:id="@+id/shoptime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"/>
+            
+        </LinearLayout>
+        
+         <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp">
+            <ImageView 
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:contentDescription="@string/content_desc"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/shoploca"/>
+            
+            <TextView 
+                android:id="@+id/shoploca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"/>
+            
+        </LinearLayout>
+        
+          <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+	        android:ellipsize="end">
+            <ImageView 
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:contentDescription="@string/content_desc"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/gift"/>
+            
+            <TextView 
+                android:id="@+id/shopactivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/infonum"/>
+            
+        </LinearLayout>
+        
+          <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp">
+            <ImageView 
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:contentDescription="@string/content_desc"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/shopvoice"/>
+            
+            <TextView 
+                android:id="@+id/shopvoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/textused"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    
+
+    
+    
+</ScrollView>

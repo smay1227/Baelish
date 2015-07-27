@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backlinear"
+        android:padding="10dp">
+        
+        <TextView 
+            android:id="@+id/tv_shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:text="麦当劳"/>
+        
+        <LinearLayout 
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:onClick="true"
+            android:visibility="gone"
+            android:background="@drawable/backchoosewhiteselect">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/backlinear"
+                android:text="@string/info"/>
+            
+            <ImageView 
+                android:id="@+id/iv_rightsize"
+                android:layout_width="14sp"
+                android:layout_height="12sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2sp"
+                android:contentDescription="@string/content_desc"
+                android:src="@drawable/downarrow"/>
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:text="@string/arrivetime"/>
+        
+        <TextView
+            android:id="@+id/tv_rightnow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/light"
+            android:layout_toLeftOf="@+id/iv_rightarrow"
+            android:text="@string/rightnow"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"/>
+        
+        <ImageView 
+            android:id="@+id/iv_rightarrow"
+            android:layout_width="14sp"
+            android:layout_height="14sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/rightlinear"
+            android:contentDescription="@string/content_desc"/>
+        
+    </RelativeLayout>
+    
+    <ImageView  
+       	android:id="@+id/iv_sizeline"
+	    android:layout_width="wrap_content"  
+	    android:layout_height="wrap_content"
+	    android:contentDescription="@string/content_desc"
+	    android:src="@drawable/shopline"
+	    android:layout_gravity="center_horizontal"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        
+        <TextView 
+            android:id="@+id/tv_invoiceleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:text="@string/invoice"/>
+        
+        <TextView
+            android:id="@+id/tv_invoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/light"
+            android:layout_marginLeft="80dp"
+            android:layout_toLeftOf="@+id/iv_invoice"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"/>
+        
+        <ImageView 
+            android:id="@+id/iv_invoice"
+            android:layout_width="14sp"
+            android:layout_height="14sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/rightlinear"
+            android:contentDescription="@string/content_desc"/>
+        
+    </RelativeLayout>
+    
+    <ImageView  
+	    android:layout_width="wrap_content"  
+	    android:layout_height="wrap_content"
+	    android:contentDescription="@string/content_desc"
+	    android:src="@drawable/shopline"
+	    android:layout_gravity="center_horizontal"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:text="@string/comment"/>
+        
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/light"
+            android:layout_toLeftOf="@+id/iv_comment"
+            android:layout_marginLeft="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"/>
+        
+        <ImageView 
+            android:id="@+id/iv_comment"
+            android:layout_width="14sp"
+            android:layout_height="14sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/rightlinear"
+            android:contentDescription="@string/content_desc"/>
+        
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="@color/textunused">
+    
+    <ImageView 
+        android:id="@+id/iv_day"
+        android:contentDescription="@string/content_desc"
+        android:layout_width="5sp"
+        android:layout_height="match_parent"
+        android:src="@drawable/undishleft"/>
+    
+    <TextView 
+        android:id="@+id/tv_daytype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/black"/>
+    
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/textunused">
+        
+    <TextView 
+        android:id="@+id/tv_carttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:background="@color/textused"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/cart"/>
+
+    <com.darna.wmxfx.utils.PinnedHeaderListView 
+        android:id="@+id/pinnedListView"
+        android:layout_below="@+id/tv_carttitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom"
+        android:dividerHeight="2dp"/>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/textunused">
+        
+        <TextView 
+            android:id="@+id/tv_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/orange"
+            android:layout_alignParentLeft="true"
+            android:text="@string/orderamount"/>
+        
+        <TextView 
+            android:id="@+id/tv_pricenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/orange"
+            android:layout_toLeftOf="@+id/tv_yuan"
+            android:layout_marginRight="2dp"/>
+                
+       <TextView 
+           android:id="@+id/tv_yuan"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="16sp"
+           android:textColor="@color/orange"
+           android:layout_alignParentRight="true"
+           android:layout_alignBottom="@+id/tv_pricenum"
+           android:layout_alignBaseline="@+id/tv_pricenum"
+           android:text="@string/yuan"/>
+       
+       <ImageView  
+          android:id="@+id/iv_line"
+          android:layout_width="wrap_content"  
+          android:layout_height="wrap_content"
+          android:contentDescription="@string/content_desc"
+          android:src="@drawable/yellowline"
+          android:layout_below="@+id/tv_order"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="5dp"/>
+       
+       <Button 
+           android:id="@+id/tv_clearcart"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="18sp"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:textColor="@color/textunused"
+           android:background="@drawable/btnlinearback"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/iv_line"
+           android:onClick="true"
+           android:text="@string/clearcart"/>
+       
+       <Button 
+           android:id="@+id/tv_check"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="18sp"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:textColor="@color/textunused"
+           android:background="@drawable/btnbackground"
+           android:layout_alignParentRight="true"
+           android:layout_below="@+id/iv_line"
+           android:onClick="true"
+           android:text="@string/checkorder"/>
+        
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/tv_nocart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="购物车中暂无菜品"
+        android:visibility="gone"/>
+    
+    
+</RelativeLayout>

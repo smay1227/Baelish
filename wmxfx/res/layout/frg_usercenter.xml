@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/backlinear">
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@color/textused">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:text="@string/usercentertitle"/>
+        
+        <ImageView 
+            android:id="@+id/iv_setting"
+            android:layout_width="18sp"
+            android:layout_height="18sp"
+            android:contentDescription="@string/content_desc"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/setting"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/textused"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp">
+        
+        <com.darna.wmxfx.layout.RoundImageView 
+            android:id="@+id/iv_userImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/content_desc"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/textused"
+            android:src="@drawable/userimage"/>
+        
+        <TextView 
+            android:id="@+id/tv_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/used"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_horizontal"
+            android:text="外卖小飞侠"
+            android:visibility="gone"/>
+        
+        <TextView 
+            android:id="@+id/tv_userPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/used"
+            android:layout_gravity="center_horizontal"
+            android:text="18252713278"
+            android:visibility="gone"/>
+        
+        <Button 
+            android:id="@+id/btn_logreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5sp"
+            android:layout_gravity="center_horizontal"
+            android:text="登陆/注册"
+            android:background="@drawable/btnlinearback"/>
+        
+        
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_intergral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textunused"
+        android:layout_marginTop="40dp"
+        android:padding="10dp">
+        
+        <ImageView 
+            android:id="@+id/iv_intergral"
+            android:layout_width="16sp"
+            android:layout_height="16sp"
+            android:contentDescription="@string/content_desc"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/usercenterstar"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/iv_intergral"
+            android:layout_marginLeft="5dp"
+            android:text="@string/myintergal"/>
+        
+        <ImageView 
+           android:id="@+id/iv_right"
+           android:layout_width="14sp"
+           android:layout_height="14sp"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:src="@drawable/rightlinear"
+           android:contentDescription="@string/content_desc"/>
+    </RelativeLayout>
+    
+    <ImageView  
+	    android:layout_width="wrap_content"  
+	    android:layout_height="wrap_content"
+	    android:contentDescription="@string/content_desc"
+	    android:src="@drawable/shopline"
+	    android:layout_gravity="center_horizontal"/>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_useraddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textunused"
+        android:padding="10dp">
+        
+        <ImageView 
+            android:id="@+id/iv_useraddress"
+            android:layout_width="16sp"
+            android:layout_height="16sp"
+            android:contentDescription="@string/content_desc"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/usercenterlocation"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/iv_useraddress"
+            android:layout_marginLeft="5dp"
+            android:text="@string/useraddress"/>
+        
+        <ImageView 
+           android:layout_width="14sp"
+           android:layout_height="14sp"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:src="@drawable/rightlinear"
+           android:contentDescription="@string/content_desc"/>
+    </RelativeLayout>
+    
+    <ImageView  
+	    android:layout_width="wrap_content"  
+	    android:layout_height="wrap_content"
+	    android:contentDescription="@string/content_desc"
+	    android:src="@drawable/shopline"
+	    android:layout_gravity="center_horizontal"/>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_userorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textunused"
+        android:padding="10dp">
+        
+        <ImageView 
+            android:id="@+id/iv_userorder"
+            android:layout_width="16sp"
+            android:layout_height="16sp"
+            android:contentDescription="@string/content_desc"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/usercenterorder"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/iv_userorder"
+            android:layout_marginLeft="5dp"
+            android:text="@string/userorder"/>
+        
+        <ImageView 
+           android:layout_width="14sp"
+           android:layout_height="14sp"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:src="@drawable/rightlinear"
+           android:contentDescription="@string/content_desc"/>
+    </RelativeLayout>
+    
+    <ImageView  
+	    android:layout_width="wrap_content"  
+	    android:layout_height="wrap_content"
+	    android:contentDescription="@string/content_desc"
+	    android:src="@drawable/shopline"
+	    android:layout_gravity="center_horizontal"/>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_uservoucher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textunused"
+        android:padding="10dp">
+        
+        <ImageView 
+            android:id="@+id/iv_uservoucher"
+            android:layout_width="16sp"
+            android:layout_height="16sp"
+            android:contentDescription="@string/content_desc"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/usercentervoucher"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/iv_uservoucher"
+            android:layout_marginLeft="5dp"
+            android:text="@string/uservoucher"/>
+        
+        <ImageView 
+           android:layout_width="14sp"
+           android:layout_height="14sp"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:src="@drawable/rightlinear"
+           android:contentDescription="@string/content_desc"/>
+    </RelativeLayout>
+    
+</LinearLayout>

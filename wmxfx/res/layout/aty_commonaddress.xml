@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backlinear">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/textused">
+        
+        <ImageView 
+            android:id="@+id/iv_rleft"
+            android:layout_width="14sp"
+            android:layout_height="14sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/rleft"
+            android:onClick="true"
+            android:contentDescription="@string/content_desc"/>
+        <!-- 
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_rleft"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:text="@string/back"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/used"/> -->
+        
+        <TextView 
+            android:id="@+id/tv_shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:text="@string/chooseaddress"/>
+        
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_addnewaddr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        android:background="@color/textunused">
+        
+        <ImageView 
+            android:id="@+id/iv_addnewaddr"
+            android:layout_width="18sp"
+            android:layout_height="18sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/content_desc"
+            android:src="@drawable/addyellow"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/used"
+            android:layout_toRightOf="@+id/iv_addnewaddr"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/newaddr"/>
+        
+        <ImageView 
+	         android:id="@+id/iv_right"
+	         android:layout_width="14sp"
+	         android:layout_height="14sp"
+	         android:layout_alignParentRight="true"
+	         android:layout_centerVertical="true"
+	         android:src="@drawable/rightlinear"
+	         android:contentDescription="@string/content_desc"/>
+        
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/mlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+        
+    </ListView>   
+
+</LinearLayout>

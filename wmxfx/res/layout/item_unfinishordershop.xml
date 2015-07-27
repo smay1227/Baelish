@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/textunused">
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        
+        <ImageView 
+            android:id="@+id/tv_shopImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/content_desc"
+            android:src="@drawable/xiashuai"/>
+        
+        <TextView 
+            android:id="@+id/tv_shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/tv_shopImg"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:text="麦当劳"/>
+        
+         <TextView
+            android:id="@+id/tv_entershop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/light"
+            android:layout_toLeftOf="@+id/iv_entershop"
+            android:layout_marginLeft="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:text="@string/entershop"/>
+        
+        <ImageView 
+            android:id="@+id/iv_entershop"
+            android:layout_width="14sp"
+            android:layout_height="14sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/rightlinear"
+            android:contentDescription="@string/content_desc"/>
+    </RelativeLayout>
+    
+    <View  
+	    android:layout_width="match_parent"  
+	    android:layout_height="1dp"
+	    android:layout_marginTop="5dp"
+	    android:background="@color/backlinear"
+	    android:layout_marginBottom="5dp"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <TextView 
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/total"/>
+        
+        <TextView 
+            android:id="@+id/tv_totalnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/used"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="101元"/>
+   </RelativeLayout>
+    
+</LinearLayout>
