@@ -188,7 +188,7 @@ public class Aty_Order extends Activity {
 		btn_pay.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				setPayOnClick();
+				//setPayOnClick();
 			}
 		});
 	}
