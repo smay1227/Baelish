@@ -17,7 +17,8 @@
 
  <br/>
 
-购物车<br/>
+
+购物车, 由于设计当中购物车会有好多地方，所以单独写了一个购物车的类， 继承了FrameLayout<br/>
 
 ![image](https://github.com/smay1227/Baelish/blob/master/image/cart.jpg)<br/>
 
@@ -29,7 +30,9 @@
 
 <br/>
 
-菜品页面<br/>
+
+菜品页面： 菜品的显示用了两个ListView, 分类是普通的listview, 详细菜品用的是PinnedHeaderListView，两个listview
+           都设置了滚动和点击的事件， UI会根据这两个事件作出相应的改变 <br/>
 
 ![image](https://github.com/smay1227/Baelish/blob/master/image/shop.jpg)<br/>
 
@@ -41,7 +44,7 @@
 
  <br/>
 
-分类定价的选择框，自己定义的<br/>
+分类定价的选择框，自己定义的。主要是用一个activity来做成一个dialog样式。<br/>
 
 ![image](https://github.com/smay1227/Baelish/blob/master/image/dishpop2.jpg)<br/>
 
@@ -56,14 +59,14 @@
 商家的具体信息页面<br/>
 
 ![image](https://github.com/smay1227/Baelish/blob/master/image/shopinfo.jpg)<br/>
+<br/>
 
- <br/>
 
 添加新的地址<br/>
 
 ![image](https://github.com/smay1227/Baelish/blob/master/image/newaddr.jpg)<br/>
-
 <br/>
+
 
 确认订单<br/>
 
@@ -76,7 +79,7 @@
 显示的未完成订单页面<br/>
 
 ![image](https://github.com/smay1227/Baelish/blob/master/image/unfinish.jpg)<br/>
-
 <br/>
+
 
 ![image](https://github.com/smay1227/Baelish/blob/master/image/unfinishorder.jpg)<br/>
