@@ -1,7 +1,5 @@
 一套完整的外卖订餐app<br/>
 
-感兴趣的小伙伴可以联系我，我qq: 825856112<br/>
-
 运用百度的定位SDK, 打开的时候自动定位。<br/>
 
 切换地址用了一个activity加另个fragment，根据EditText内容的变化，会显示两个不同内容的fragment<br/>
